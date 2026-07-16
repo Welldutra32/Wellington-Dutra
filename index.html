@@ -1,134 +1,146 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wellington Dutra | Consultor Executivo Imobiliário</title>
 
-    <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wellington Dutra | Consultor Executivo Imobiliário</title>
+
+<meta name="description" content="Especialista em lançamentos imobiliários em São Paulo. Atendimento personalizado para compra do primeiro imóvel e investimento.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
 
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
+font-family:Poppins,sans-serif;
 }
 
 body{
-background:#111;
+
+background:#0f0f0f;
 color:white;
+
 }
 
 header{
-background:#000;
+
+position:fixed;
+top:0;
+width:100%;
+background:#111;
 padding:20px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
+z-index:999;
+
 }
 
 .logo{
-font-size:30px;
+
+font-size:28px;
 font-weight:bold;
 color:#d4af37;
+
 }
 
 nav a{
+
 color:white;
 text-decoration:none;
-margin-left:25px;
-font-weight:bold;
+margin-left:30px;
+
 }
 
 .hero{
 
-height:90vh;
-
-background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-url("https://images.unsplash.com/photo-1543059080-f9b1272213d5?auto=format&fit=crop&w=1600&q=80");
-
-background-size:cover;
-
-background-position:center;
-
+padding:150px 8% 80px;
 display:flex;
-
-justify-content:center;
-
 align-items:center;
+justify-content:space-between;
+flex-wrap:wrap;
 
-text-align:center;
+}
 
-padding:20px;
+.hero-text{
+
+max-width:600px;
 
 }
 
 .hero h1{
 
-font-size:60px;
-
-margin-bottom:20px;
-
-}
-
-.hero p{
-
-font-size:22px;
-
-margin-bottom:35px;
+font-size:52px;
+line-height:60px;
 
 }
 
-.btn{
-
-background:#d4af37;
-
-color:black;
-
-padding:18px 35px;
-
-text-decoration:none;
-
-font-size:20px;
-
-font-weight:bold;
-
-border-radius:10px;
-
-}
-
-section{
-
-padding:80px 10%;
-
-}
-
-h2{
-
-font-size:42px;
-
-margin-bottom:25px;
+.hero span{
 
 color:#d4af37;
 
 }
 
-.sobre{
+.hero p{
 
-display:flex;
-
-gap:40px;
-
-align-items:center;
-
-flex-wrap:wrap;
+margin:25px 0;
+font-size:18px;
+line-height:32px;
 
 }
 
-.sobre img{
+.botao{
 
-width:300px;
+display:inline-block;
+padding:18px 35px;
+background:#25D366;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:bold;
 
+}
+
+.hero img{
+
+width:420px;
+border-radius:20px;
+box-shadow:0 20px 60px rgba(0,0,0,.5);
+
+}
+
+section{
+
+padding:90px 8%;
+
+}
+
+.titulo{
+
+font-size:40px;
+margin-bottom:40px;
+color:#d4af37;
+
+}
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+
+}
+
+.card{
+
+background:#1d1d1d;
+padding:30px;
 border-radius:15px;
 
 }
@@ -136,38 +148,48 @@ border-radius:15px;
 footer{
 
 background:#000;
-
-padding:40px;
-
+padding:50px;
 text-align:center;
-
-margin-top:60px;
 
 }
 
-.whatsapp{
+.whats{
 
 position:fixed;
-
-right:20px;
-
-bottom:20px;
-
+right:25px;
+bottom:25px;
 background:#25D366;
-
-color:white;
-
 padding:18px;
-
 border-radius:50%;
-
-font-size:28px;
-
+font-size:30px;
 text-decoration:none;
 
 }
 
-    </style>
+@media(max-width:900px){
+
+.hero{
+
+text-align:center;
+
+}
+
+.hero img{
+
+margin-top:40px;
+width:100%;
+
+}
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+}
+
+</style>
 
 </head>
 
@@ -175,17 +197,19 @@ text-decoration:none;
 
 <header>
 
-<div class="logo">WD Imóveis</div>
+<div class="logo">
+Wellington Dutra
+</div>
 
 <nav>
 
-<a href="#">Home</a>
+<a href="#">Início</a>
 
-<a href="#">Sobre</a>
+<a href="#sobre">Sobre</a>
 
-<a href="#">Imóveis</a>
+<a href="#servicos">Serviços</a>
 
-<a href="#">Contato</a>
+<a href="#contato">Contato</a>
 
 </nav>
 
@@ -193,55 +217,128 @@ text-decoration:none;
 
 <section class="hero">
 
-<div>
+<div class="hero-text">
 
-<h1>Encontre seu imóvel ideal em São Paulo</h1>
+<h1>
 
-<p>Consultoria especializada em apartamentos, lançamentos e investimentos.</p>
+Encontre seu <span>Imóvel Ideal</span> em São Paulo
 
-<a class="btn" href="https://wa.me/5511913170690">Falar no WhatsApp</a>
+</h1>
+
+<p>
+
+Consultor Executivo Imobiliário especializado em lançamentos, imóveis na planta e investimentos nas regiões da Linha Vermelha e Linha Amarela.
+
+</p>
+
+<a class="botao" href="https://wa.me/5511913170690">
+
+Falar no WhatsApp
+
+</a>
+
+</div>
+
+<img src="ChatGPT Image 16_07_2026, 10_54_53.png">
+
+</section>
+
+<section id="sobre">
+
+<h2 class="titulo">
+
+Sobre Mim
+
+</h2>
+
+<p>
+
+Meu nome é Wellington Dutra.
+
+Ajudo famílias e investidores a encontrar oportunidades imobiliárias com segurança, transparência e atendimento personalizado.
+
+</p>
+
+</section>
+
+<section id="servicos">
+
+<h2 class="titulo">
+
+Como Posso Ajudar
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Lançamentos</h3>
+
+<p>Empreendimentos das melhores construtoras.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Financiamento</h3>
+
+<p>Simulação de crédito e uso do FGTS.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Investimento</h3>
+
+<p>Imóveis para valorização e renda.</p>
+
+</div>
 
 </div>
 
 </section>
 
-<section>
+<section id="contato">
 
-<h2>Quem é Wellington Dutra</h2>
+<h2 class="titulo">
 
-<div class="sobre">
+Contato
 
-<img src="https://via.placeholder.com/300x380.png?text=Sua+Foto">
-
-<div>
+</h2>
 
 <p>
 
-Sou Wellington Dutra, Consultor Executivo Imobiliário, especializado em imóveis na cidade de São Paulo.
+WhatsApp
 
-Meu objetivo é ajudar você a encontrar o imóvel ideal com segurança, transparência e um atendimento totalmente personalizado.
+<br><br>
+
+(11) 91317-0690
+
+<br><br>
+
+Instagram
+
+<br>
+
+@Welldutra_94
 
 </p>
-
-</div>
-
-</div>
 
 </section>
 
 <footer>
 
-<h3>Wellington Dutra</h3>
-
-<p>Consultor Executivo Imobiliário</p>
-
-<p>WhatsApp: (11) 91317-0690</p>
-
-<p>Instagram: @Welldutra_94</p>
+© 2026 Wellington Dutra
 
 </footer>
 
-<a class="whatsapp" href="https://wa.me/5511913170690">💬</a>
+<a class="whats" href="https://wa.me/5511913170690">
+
+📲
+
+</a>
 
 </body>
+
 </html>
