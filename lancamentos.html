@@ -1,7 +1,5 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
 
 <meta charset="UTF-8">
@@ -11,6 +9,145 @@
 
 <link rel="stylesheet" href="css/style.css">
 
+<style>
+
+body{
+background:#f5f5f5;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+.banner{
+
+background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+url('https://images.unsplash.com/photo-1460317442991-0ec209397118?w=1600');
+
+background-size:cover;
+background-position:center;
+
+padding:120px 20px;
+
+text-align:center;
+
+color:white;
+
+}
+
+.banner h1{
+
+font-size:55px;
+
+margin-bottom:20px;
+
+}
+
+.banner p{
+
+font-size:22px;
+
+}
+
+.lista{
+
+max-width:1300px;
+
+margin:60px auto;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+
+gap:30px;
+
+padding:20px;
+
+}
+
+.imovel{
+
+background:white;
+
+border-radius:15px;
+
+overflow:hidden;
+
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+transition:.3s;
+
+}
+
+.imovel:hover{
+
+transform:translateY(-10px);
+
+}
+
+.imovel img{
+
+width:100%;
+
+height:230px;
+
+object-fit:cover;
+
+}
+
+.info{
+
+padding:25px;
+
+}
+
+.info h2{
+
+color:#d4af37;
+
+margin-bottom:15px;
+
+}
+
+.info p{
+
+margin:8px 0;
+
+}
+
+.botao{
+
+display:inline-block;
+
+margin-top:20px;
+
+background:#25D366;
+
+color:white;
+
+padding:15px 30px;
+
+text-decoration:none;
+
+border-radius:8px;
+
+font-weight:bold;
+
+}
+
+footer{
+
+background:#111;
+
+color:white;
+
+text-align:center;
+
+padding:40px;
+
+margin-top:60px;
+
+}
+
+</style>
+
 </head>
 
 <body>
@@ -18,87 +155,219 @@
 <header>
 
 <div class="logo">
+
 <h2>Wellington Dutra</h2>
+
 <p>Consultor Executivo Imobiliário</p>
+
 </div>
 
 <nav>
 
 <a href="index.html">Início</a>
+
 <a href="lancamentos.html">Lançamentos</a>
+
 <a href="alto-padrao.html">Alto Padrão</a>
+
 <a href="investimentos.html">Investimentos</a>
+
 <a href="contato.html">Contato</a>
 
 </nav>
 
 </header>
 
-<section class="hero">
+<section class="banner">
 
-<div class="texto">
-
-<h1>Lançamentos em Destaque</h1>
+<h1>Lançamentos em São Paulo</h1>
 
 <p>
 
-Conheça alguns dos melhores empreendimentos disponíveis em São Paulo.
+Conheça os melhores empreendimentos disponíveis.
 
 </p>
 
+</section>
+
+<section class="lista">
+
+<div class="imovel">
+
+<img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?w=900">
+
+<div class="info">
+
+<h2>Órbya Vila Carrão</h2>
+
+<p>🏢 Construtora Diálogo</p>
+
+<p>📍 Vila Carrão</p>
+
+<p>🛏 2 e 3 dormitórios</p>
+
+<p>🏊 Lazer Completo</p>
+
+<a class="botao"
+href="imoveis/orbya-vila-carrao.html">
+
+Ver Empreendimento
+
+</a>
+
+</div>
+
+</div>
+
+<div class="imovel">
+
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=900">
+
+<div class="info">
+
+<h2>Gran Diálogo Parque da Mooca</h2>
+
+<p>🏢 Construtora Diálogo</p>
+
+<p>📍 Parque da Mooca</p>
+
+<p>🛏 Apartamentos modernos</p>
+
+<a class="botao"
+href="https://wa.me/5511913170690?text=Tenho interesse no Gran Diálogo Parque da Mooca">
+
+Tenho Interesse
+
+</a>
+
+</div>
+
+</div>
+
+<div class="imovel">
+
+<img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=900">
+
+<div class="info">
+
+<h2>Vértice Butantã</h2>
+
+<p>🏢 Construtora Diálogo</p>
+
+<p>📍 Butantã</p>
+
+<p>🚇 Próximo ao metrô</p>
+
+<a class="botao"
+href="https://wa.me/5511913170690?text=Tenho interesse no Vértice Butantã">
+
+Tenho Interesse
+
+</a>
+
+</div>
+
+</div>
+
+<div class="imovel">
+
+<img src="https://images.unsplash.com/photo-1494526585095-c41746248156?w=900">
+
+<div class="info">
+
+<h2>Pátio Penha</h2>
+
+<p>🏢 Construtora Namour</p>
+
+<p>📍 Penha</p>
+
+<a class="botao"
+href="https://wa.me/5511913170690?text=Tenho interesse no Pátio Penha">
+
+Tenho Interesse
+
+</a>
+
+</div>
+
+</div>
+
+<div class="imovel">
+
+<img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=900">
+
+<div class="info">
+
+<h2>Up Sports Vila Sônia</h2>
+
+<p>🏢 Construtora Ampla</p>
+
+<p>📍 Vila Sônia</p>
+
+<a class="botao"
+href="https://wa.me/5511913170690?text=Tenho interesse no Up Sports Vila Sônia">
+
+Tenho Interesse
+
+</a>
+
+</div>
+
+</div>
+
+<div class="imovel">
+
+<img src="https://images.unsplash.com/photo-1448630360428-65456885c650?w=900">
+
+<div class="info">
+
+<h2>Bosque Parque do Carmo</h2>
+
+<p>🏢 Plano&Plano</p>
+
+<p>📍 Parque do Carmo</p>
+
+<a class="botao"
+href="https://wa.me/5511913170690?text=Tenho interesse no Bosque Parque do Carmo">
+
+Tenho Interesse
+
+</a>
+
+</div>
+
+</div>
+
+<div class="imovel">
+
+<img src="https://images.unsplash.com/photo-1462396240927-52058a6a84ec?w=900">
+
+<div class="info">
+
+<h2>Monã Anália Franco</h2>
+
+<p>🏢 Construtora Diálogo</p>
+
+<p>📍 Anália Franco</p>
+
+<a class="botao"
+href="https://wa.me/5511913170690?text=Tenho interesse no Monã Anália Franco">
+
+Tenho Interesse
+
+</a>
+
+</div>
+
 </div>
 
 </section>
 
-<section class="servicos">
+<footer>
 
-<div class="cards">
+© 2026 Wellington Dutra - Consultor Executivo Imobiliário
 
-<div class="card">
-<h3>Órbya Vila Carrão</h3>
-<p>Construtora Diálogo</p>
-<a class="botao" href="https://wa.me/55SEUNUMERO?text=Olá Wellington! Tenho interesse no Órbya Vila Carrão.">Tenho Interesse</a>
-</div>
-
-<div class="card">
-<h3>Gran Diálogo Parque da Mooca</h3>
-<p>Construtora Diálogo</p>
-<a class="botao" href="https://wa.me/55SEUNUMERO?text=Olá Wellington! Tenho interesse no Gran Diálogo Parque da Mooca.">Tenho Interesse</a>
-</div>
-
-<div class="card">
-<h3>Vértice Butantã</h3>
-<p>Construtora Diálogo</p>
-<a class="botao" href="https://wa.me/55SEUNUMERO?text=Olá Wellington! Tenho interesse no Vértice Butantã.">Tenho Interesse</a>
-</div>
-
-<div class="card">
-<h3>Pátio Penha</h3>
-<p>Construtora Namour</p>
-<a class="botao" href="https://wa.me/55SEUNUMERO?text=Olá Wellington! Tenho interesse no Pátio Penha.">Tenho Interesse</a>
-</div>
-
-<div class="card">
-<h3>Up Sports Vila Sônia</h3>
-<p>Construtora Ampla</p>
-<a class="botao" href="https://wa.me/55SEUNUMERO?text=Olá Wellington! Tenho interesse no Up Sports Vila Sônia.">Tenho Interesse</a>
-</div>
-
-<div class="card">
-<h3>Bosque Parque do Carmo</h3>
-<p>Construtora Plano&Plano</p>
-<a class="botao" href="https://wa.me/55SEUNUMERO?text=Olá Wellington! Tenho interesse no Bosque Parque do Carmo.">Tenho Interesse</a>
-</div>
-
-<div class="card">
-<h3>Monã Anália Franco</h3>
-<p>Construtora Diálogo</p>
-<a class="botao" href="https://wa.me/55SEUNUMERO?text=Olá Wellington! Tenho interesse no Monã Anália Franco.">Tenho Interesse</a>
-</div>
-
-</div>
-
-</section>
+</footer>
 
 </body>
 
