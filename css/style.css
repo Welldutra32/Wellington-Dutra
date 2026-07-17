@@ -1,198 +1,516 @@
+/* ===========================
+   WELLINGTON DUTRA IMÓVEIS
+   PREMIUM STYLE V1
+=========================== */
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f5f5f5;
-    color:#333;
+font-family:Arial,Helvetica,sans-serif;
+background:#f4f4f4;
+color:#222;
+line-height:1.6;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+a{
+text-decoration:none;
+transition:.3s;
 }
 
 header{
-    background:#111;
-    color:#fff;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 8%;
-    position:sticky;
-    top:0;
-    z-index:1000;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#111;
+z-index:999;
+box-shadow:0 3px 15px rgba(0,0,0,.25);
 }
 
 .logo h2{
-    color:#d4af37;
+color:#d4af37;
+font-size:30px;
 }
 
 .logo p{
-    font-size:14px;
-    color:#ddd;
+color:#ddd;
+font-size:13px;
 }
 
 nav{
-    display:flex;
-    gap:20px;
-    flex-wrap:wrap;
+display:flex;
+gap:30px;
 }
 
 nav a{
-    color:#fff;
-    text-decoration:none;
-    font-weight:bold;
-    transition:.3s;
+color:#fff;
+font-weight:bold;
+font-size:15px;
 }
 
 nav a:hover{
-    color:#d4af37;
+color:#d4af37;
 }
 
 .hero{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:80px 8%;
-    background:linear-gradient(135deg,#111,#222);
-    color:#fff;
-    flex-wrap:wrap;
+
+height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url("flyer.png");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+
+align-items:center;
+
+padding:0 8%;
+
 }
 
-.texto{
-    max-width:550px;
+.hero .texto{
+
+max-width:650px;
+
 }
 
-.texto h1{
-    font-size:48px;
-    margin-bottom:20px;
+.hero h1{
+
+font-size:65px;
+
+color:#fff;
+
+margin-bottom:25px;
+
+line-height:1.1;
+
 }
 
-.texto p{
-    font-size:20px;
-    line-height:1.6;
-    margin-bottom:35px;
+.hero span{
+
+color:#d4af37;
+
+}
+
+.hero p{
+
+color:#eee;
+
+font-size:21px;
+
+margin-bottom:35px;
+
 }
 
 .botao{
-    background:#d4af37;
-    color:#111;
-    padding:16px 35px;
-    border-radius:8px;
-    text-decoration:none;
-    font-weight:bold;
-    transition:.3s;
+
+display:inline-block;
+
+background:#d4af37;
+
+padding:18px 45px;
+
+border-radius:8px;
+
+font-weight:bold;
+
+color:#111;
+
 }
 
 .botao:hover{
-    background:#fff;
+
+transform:translateY(-3px);
+
+background:#f2cf59;
+
 }
 
-.foto img{
-    width:420px;
-    border-radius:15px;
-    box-shadow:0 15px 40px rgba(0,0,0,.4);
+section{
+
+padding:90px 8%;
+
 }
 
-.servicos{
-    padding:80px 8%;
-    text-align:center;
+.titulo{
+
+text-align:center;
+
+margin-bottom:60px;
+
 }
 
-.servicos h2{
-    font-size:38px;
-    margin-bottom:50px;
+.titulo h2{
+
+font-size:42px;
+
+color:#111;
+
+margin-bottom:15px;
+
+}
+
+.titulo p{
+
+color:#777;
+
 }
 
 .cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
 }
 
 .card{
-    background:#fff;
-    padding:35px;
-    border-radius:12px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-    transition:.3s;
+
+background:#fff;
+
+border-radius:15px;
+
+overflow:hidden;
+
+box-shadow:0 10px 25px rgba(0,0,0,.10);
+
+transition:.4s;
+
 }
 
 .card:hover{
-    transform:translateY(-10px);
+
+transform:translateY(-10px);
+
 }
 
-.card h3{
-    color:#d4af37;
-    margin-bottom:15px;
+.card img{
+
+height:220px;
+
+width:100%;
+
+object-fit:cover;
+
+}
+
+.card-content{
+
+padding:25px;
+
+}
+
+.card-content h3{
+
+font-size:24px;
+
+margin-bottom:15px;
+
+color:#111;
+
+}
+
+.card-content p{
+
+color:#666;
+
+margin-bottom:20px;
+
+}
+
+.card-content a{
+
+display:inline-block;
+
+background:#111;
+
+color:#fff;
+
+padding:12px 28px;
+
+border-radius:6px;
+
+}
+
+.card-content a:hover{
+
+background:#d4af37;
+
+color:#111;
+
 }
 
 .sobre{
-    background:#fff;
-    padding:80px 8%;
-    text-align:center;
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:70px;
+
+align-items:center;
+
+}
+
+.sobre img{
+
+border-radius:20px;
+
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+
 }
 
 .sobre h2{
-    font-size:38px;
-    margin-bottom:25px;
+
+font-size:45px;
+
+margin-bottom:25px;
+
+color:#111;
+
 }
 
 .sobre p{
-    max-width:900px;
-    margin:auto;
-    line-height:1.8;
-    font-size:18px;
+
+font-size:18px;
+
+margin-bottom:20px;
+
+color:#555;
+
+}
+
+.numeros{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+text-align:center;
+
+background:#111;
+
+padding:60px 8%;
+
+}
+
+.numero h2{
+
+font-size:45px;
+
+color:#d4af37;
+
+}
+
+.numero p{
+
+color:#fff;
+
+}
+
+.contato{
+
+background:#fff;
+
+padding:70px;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+
+}
+
+.contato h2{
+
+margin-bottom:30px;
+
+font-size:38px;
+
+}
+
+input,textarea{
+
+width:100%;
+
+padding:18px;
+
+margin-bottom:20px;
+
+border:1px solid #ddd;
+
+border-radius:8px;
+
+font-size:16px;
+
+}
+
+textarea{
+
+height:180px;
+
+resize:none;
+
+}
+
+button{
+
+background:#d4af37;
+
+border:none;
+
+padding:18px 45px;
+
+font-size:17px;
+
+font-weight:bold;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}
+
+button:hover{
+
+background:#111;
+
+color:#fff;
+
 }
 
 footer{
-    background:#111;
-    color:#fff;
-    text-align:center;
-    padding:25px;
+
+background:#111;
+
+padding:50px 8%;
+
+text-align:center;
+
+color:#bbb;
+
+}
+
+footer h3{
+
+color:#d4af37;
+
+margin-bottom:20px;
+
+font-size:30px;
+
+}
+
+.whatsapp{
+
+position:fixed;
+
+right:25px;
+
+bottom:25px;
+
+background:#25D366;
+
+width:65px;
+
+height:65px;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:32px;
+
+color:#fff;
+
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+z-index:999;
+
+}
+
+.whatsapp:hover{
+
+transform:scale(1.1);
+
 }
 
 @media(max-width:900px){
 
 header{
+
 flex-direction:column;
-gap:20px;
-}
 
-.hero{
-flex-direction:column;
-text-align:center;
-}
+padding:20px;
 
-.texto h1{
-font-size:34px;
-}
-
-.texto p{
-font-size:18px;
-}
-
-.foto img{
-width:300px;
-margin-top:40px;
 }
 
 nav{
+
+flex-wrap:wrap;
+
 justify-content:center;
-}
+
+gap:15px;
+
+margin-top:15px;
 
 }
-.card{
-text-decoration:none;
-color:#333;
-cursor:pointer;
+
+.hero{
+
+text-align:center;
+
+justify-content:center;
+
 }
 
-.card:hover{
-background:#d4af37;
-color:#111;
-transform:translateY(-10px) scale(1.03);
+.hero h1{
+
+font-size:42px;
+
 }
 
-.card:hover h3{
-color:#111;
+.hero p{
+
+font-size:18px;
+
+}
+
+.sobre{
+
+grid-template-columns:1fr;
+
+}
+
+.numeros{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:40px;
+
+}
+
 }
