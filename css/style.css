@@ -181,3 +181,18 @@ justify-content:center;
 }
 
 }
+.card{
+text-decoration:none;
+color:#333;
+cursor:pointer;
+}
+
+.card:hover{
+background:#d4af37;
+color:#111;
+transform:translateY(-10px) scale(1.03);
+}
+
+.card:hover h3{
+color:#111;
+}
